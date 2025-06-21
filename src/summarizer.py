@@ -178,8 +178,8 @@ def summarize_email(email_text, key_words):
 
 
 def send_email_summary(summary_text, datetime):
-    sender = "sangyi0914@gmail.com"
-    receiver = "sangyi0914@gmail.com"
+    sender = os.getenv("GMAIL_EMAIL")
+    receiver = os.getenv("GMAIL_EMAIL")
     password = os.getenv("GMAIL_PASSWORD")  # Get from Google App Passwords (if 2FA enabled)
 
     msg = MIMEText(summary_text)
