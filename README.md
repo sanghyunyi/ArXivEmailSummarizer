@@ -10,7 +10,7 @@ FEATURES
 - Connects to your Gmail using Gmail API
 - Filters emails from `no-reply@arxiv.org` sent to a specific address (e.g., `rabble@arxiv.org`)
 - Extracts and decodes email contents (plain text)
-- Uses Gemini 1.5 Pro to summarize relevant papers based on keywords (e.g., "RAG, AI, LLM")
+- Uses Gemini 1.5 Flash to summarize relevant papers based on keywords (e.g., "RAG, AI, LLM")
 - Sends a concise summary email back to you
 - Avoids reprocessing previously summarized emails
 - Runs daily in the background via cron
@@ -86,7 +86,7 @@ SECURITY
 ----------------------------------
 EXAMPLE OUTPUT
 ----------------------------------
-
+```text
 Subject:
    🧠 ArXiv Email Summary 2025-06-14 13:58:01
 
@@ -98,7 +98,7 @@ Body:
    • [Another Paper Title]
      Summary: ...
      Link: https://arxiv.org/abs/...
-
+```
 ----------------------------------
 LICENSE
 ----------------------------------
