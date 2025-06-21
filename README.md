@@ -30,8 +30,10 @@ SETUP INSTRUCTIONS
 
 1. Clone the Repository
 
-   git clone https://github.com/yourname/arxiv-mail-summarizer.git
+```bash
+   git clone https://github.com/sanghyunyi/ArXivEmailSummarizer.git
    cd arxiv-mail-summarizer
+```
 
 2. Create `.env` File
 
