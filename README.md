@@ -35,8 +35,8 @@ SETUP INSTRUCTIONS
 
 2. Create `.env` File
 
-   GEMINI_API_KEY=your_gemini_api_key_here
-   GMAIL_PASSWORD=your_gmail_app_password
+   GEMINI_API_KEY=<your_gemini_api_key_here>
+   GMAIL_PASSWORD=<your_gmail_app_password>
 
    ⚠️ Do NOT commit this file. Add it to `.gitignore`.
 
