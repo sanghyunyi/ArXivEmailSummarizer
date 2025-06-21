@@ -149,7 +149,7 @@ def fetch_filtered_emails(service, max_results=100):
 def summarize_email(email_text, key_words):
     genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
     
-    model = genai.GenerativeModel('gemini-1.5-flash')  # or 'gemini-1.5-pro' if needed
+    model = genai.GenerativeModel('gemini-1.5-pro')
 
     prompt = f"""
     Among the papers in the following emails, select and return the papers that are most relevant to the key words. 

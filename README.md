@@ -10,7 +10,7 @@ FEATURES
 - Connects to your Gmail using Gmail API
 - Filters emails from `no-reply@arxiv.org` sent to a specific address (e.g., `rabble@arxiv.org`)
 - Extracts and decodes email contents (plain text)
-- Uses Gemini 1.5 Flash to summarize relevant papers based on keywords (e.g., "RAG, AI, LLM")
+- Uses Gemini 1.5 Pro to summarize relevant papers based on keywords (e.g., "RAG, AI, LLM")
 - Sends a concise summary email back to you
 - Avoids reprocessing previously summarized emails
 - Runs daily in the background via cron
@@ -73,7 +73,7 @@ CUSTOMIZATION
 
 - Change `key_words` in the `main()` logic
 - Modify email filters in `fetch_filtered_emails()`
-- Use `gemini-1.5-pro` for more detailed output (note quota)
+- Use other gemini models for more precise output
 
 ----------------------------------
 SECURITY
