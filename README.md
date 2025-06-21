@@ -40,8 +40,6 @@ SETUP INSTRUCTIONS
    GMAIL_PASSWORD=<your_gmail_app_password>
 ```
 
-   ⚠️ Do NOT commit this file. Add it to `.gitignore`.
-
 3. Setup Gmail API Credentials
 
    - Go to: https://console.cloud.google.com/
