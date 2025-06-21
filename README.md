@@ -39,7 +39,8 @@ SETUP INSTRUCTIONS
 
 ```env
    GEMINI_API_KEY=<your_gemini_api_key>
-   GMAIL_PASSWORD=<your_gmail_app_password>
+   GMAIL_EMAIL=<your_gmail_email>
+   GMAIL_PASSWORD=<your_gmail_app_password, not the actual password>
 ```
 
 3. Setup Gmail API Credentials
