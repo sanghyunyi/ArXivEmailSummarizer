@@ -31,7 +31,7 @@ SETUP INSTRUCTIONS
 1. Clone the Repository
 
 ```bash
-   git clone https://github.com/sanghyunyi/ArXivEmailSummarizer.git
+   git clone https://github.com/sanghyunyi/arxiv-mail-summarizer.git
    cd arxiv-mail-summarizer
 ```
 
