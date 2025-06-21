@@ -55,15 +55,18 @@ USAGE
 
 Run Manually:
 
+```bash
    python main.py
+```
 
 Run Automatically (Every 24 Hours):
 
    On Linux/macOS:
    Run `crontab -e`, then add:
 
+```bash
    0 8 * * * /usr/bin/python3 /full/path/to/main.py >> /tmp/arxiv_summary.log 2>&1
-
+```
 ----------------------------------
 CUSTOMIZATION
 ----------------------------------
