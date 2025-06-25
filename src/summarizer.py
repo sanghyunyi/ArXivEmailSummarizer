@@ -153,9 +153,9 @@ def summarize_email(email_text, key_words):
 
     prompt = f"""
     Among the papers in the following emails, select and return the papers that are most relevant to the key words. 
-    Provide the exact title, summary, and link of the relevant papers from the original email.
+    Provide the exact title, abstract, and link of the relevant papers from the original email.
     Do not summarize the papers in your own words.
-    Just return the title, summary, and link of the relevant papers.
+    Just return the title, abstract, and link of the relevant papers.
     
     Key words: {key_words}
     
