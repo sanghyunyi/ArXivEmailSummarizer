@@ -25,7 +25,7 @@ def main():
         if msg_id in processed_ids:
             continue  # skip already summarized emails
 
-        summary = summarize_email(email['text'], key_words="RAG, AI, LLM")
+        summary = summarize_email(email['text'], key_words="RAG, AI, LLM, retrieval")
         if summary:
             send_email_summary(summary, email['datetime'])
             new_processed_ids.add(msg_id)

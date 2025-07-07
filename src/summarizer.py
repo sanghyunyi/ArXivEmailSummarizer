@@ -14,7 +14,7 @@ from datetime import datetime
 import google.generativeai as genai
 from dotenv import load_dotenv
 
-load_dotenv("../.env")
+load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"))
 
 SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']  # or modify if you need write/send access
 
@@ -23,8 +23,8 @@ def get_gmail_service():
     creds = None
 
     # ✅ Load token if it exists
-    if os.path.exists('token.json'):
-        creds = Credentials.from_authorized_user_file('token.json', SCOPES)
+    if os.path.exists(os.path.join(os.path.dirname(__file__), "token.json")):
+        creds = Credentials.from_authorized_user_file(os.path.join(os.path.dirname(__file__), "token.json"), SCOPES)
 
     # 🔄 Refresh or re-login if needed
     if not creds or not creds.valid:
@@ -32,11 +32,11 @@ def get_gmail_service():
             creds.refresh(Request())
         else:
             flow = InstalledAppFlow.from_client_secrets_file(
-                '../credentials.json', SCOPES)
+                os.path.join(os.path.dirname(__file__), "..", "credentials.json"), SCOPES)
             creds = flow.run_local_server(port=0)
         
         # 💾 Save the credentials for next time
-        with open('token.json', 'w') as token_file:
+        with open(os.path.join(os.path.dirname(__file__), "token.json"), 'w') as token_file:
             token_file.write(creds.to_json())
 
     return build('gmail', 'v1', credentials=creds)
